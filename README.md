@@ -1,19 +1,19 @@
-# LeetCode em Java 25
+# LeetCode in Java 25
 
-Workspace de prática com JDK 25. Os desafios ficam em `src/`.
+This repository contains my solutions to LeetCode challenges. I use it to practice problem solving in Java and explore how data structures support different software designs.
 
-## Rodar o modelo
+## Challenge categories
 
-Na raiz do projeto, execute:
+- [Data Structures and Algorithms](src/datastructureandalgoritms) covers array manipulation, counting, and other algorithmic exercises.
+- [Software and System Design](src/systemandsoftwaredesign) covers caches and classes that process streams of data.
+
+## Run a solution locally
+
+Use JDK 25. From the repository root, compile and run a class with a `main` method:
 
 ```sh
-javac --release 25 -d out src/Modelo.java
-java -cp out Modelo
+javac --release 25 -d out src/systemandsoftwaredesign/SummaryRanges.java
+java -cp out systemandsoftwaredesign.SummaryRanges
 ```
 
-## Adicionar um desafio
-
-1. Crie um arquivo por problema, como `src/P0001TwoSum.java`, e use o mesmo nome na classe pública.
-2. Mantenha a assinatura do método fornecida pelo enunciado e use o `main` para testar os exemplos e os casos de borda.
-3. Compile e execute trocando `Modelo` pelo nome da sua classe nos comandos acima.
-4. Para enviar ao LeetCode, coloque o método e seus auxiliares na classe fornecida pelo editor do problema, geralmente `Solution`, e inclua os imports usados.
+Runnable examples exercise the solutions with sample inputs from the challenges.
